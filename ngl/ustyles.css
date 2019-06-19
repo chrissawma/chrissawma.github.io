@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 body {
     margin: 0;
@@ -10,7 +11,10 @@ body {
     padding: 0;
     height: 100vh;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 0;
     z-index:-1;
@@ -20,7 +24,8 @@ body {
     padding: 0;
     height: 100vh;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     position: absolute;
     top: 100vh;
     z-index: -1;
@@ -30,23 +35,29 @@ body {
     background-blend-mode: screen;
 }
 #vid3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     top: 200vh;
     position: absolute;
     background-color: (0,0,0,0.7);
 
 }
 #vid4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
     height: 100vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     z-index: -1;
     top: 300vh;
@@ -55,11 +66,14 @@ body {
 
 }
 #vid5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
     height: 100vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100vw;
     top: 200vh;
     position: absolute;
@@ -80,7 +94,8 @@ body {
     padding: 0;
     height: 100vh;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     top: 500vh;
     position: absolute;
     z-index: -1;
@@ -88,9 +103,11 @@ body {
 }
 .header {         
     width: 100vw;
+    display: -ms-grid;
     display: grid;
     grid-area: header;
     position: fixed;
+    -ms-grid-columns: .4fr 7fr 2fr;
     grid-template-columns: .4fr 7fr 2fr;
     background-color: none;
     z-index: 3;
@@ -99,11 +116,44 @@ body {
 .container {
     width: 100vw;
     height: auto;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    -ms-grid-rows: auto (100vh)[6];
     grid-template-rows: auto repeat(6, 100vh);
 }
+.container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+.container > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+}
+.container > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+}
+.container > *:nth-child(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+}
+.container > *:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+}
+.container > *:nth-child(6) {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+}
+.container > *:nth-child(7) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+}
 .header > .logo{
+    -ms-grid-column:1;
+    -ms-grid-column-span:1;
     grid-column:1/2;
 
                     }
@@ -111,6 +161,8 @@ body {
     margin-top: 0.25rem;
     margin-left: 0.25rem;
     background-color: rgba(0, 248, 248, 0.938);
+    -webkit-transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
     border: 0.4px solid rgba(147, 228, 228, 0.938);
     border-radius: 8px;
@@ -119,6 +171,8 @@ body {
 
 
 .navigation {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
     grid-column: 3/4;
     }
 
@@ -139,6 +193,8 @@ ul > li a::before {
     height: 0%;
     width: 1px;
     background-color: rgba(194, 110, 233, 0.3);
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
     transition: 0.7s;
 
 
@@ -169,6 +225,8 @@ ul > li a::after {
 
 .navigation > ul > li a:hover::after {
     color: rgba(194, 110, 233, 0.9);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     width: 100%;
     height: 1px;
@@ -185,6 +243,7 @@ ul > li a::after {
 }
 
 .casing{
+    display:-ms-grid;
     display:grid;
     place-items: center;
 
@@ -198,7 +257,8 @@ ul > li a::after {
     height: 80%;
     background-color: rgba(54, 59, 57, 0.1);
     border-radius: 2%;
-    box-shadow: 18px 35px 70px 12px rgba(56, 56, 56, 0.95);
+    -webkit-box-shadow: 18px 35px 70px 12px rgba(56, 56, 56, 0.95);
+            box-shadow: 18px 35px 70px 12px rgba(56, 56, 56, 0.95);
 
 
 }
@@ -208,7 +268,10 @@ ul > li a::after {
     height: 80%;
     background-color: rgba(30, 32, 32, 0.2);
     border-radius: 2%;
-    box-shadow: 18px 65px 70px 12px rgba(58, 58, 58, 0.95);
+    -webkit-box-shadow: 18px 65px 70px 12px rgba(58, 58, 58, 0.95);
+            box-shadow: 18px 65px 70px 12px rgba(58, 58, 58, 0.95);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 
 
@@ -233,6 +296,8 @@ ul > li a::after {
     width: auto;
     margin-right: 25%;
     margin-top: 10%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 
 }
@@ -259,8 +324,12 @@ ul > li a::after {
     float: left;
     margin-left: 22%;
     margin-top: 9%;
-    transform: rotateX(110);
-    box-shadow: 0px 0px 54px 12px rgba(126,208,233,1);
+    -webkit-transform: rotateX(110);
+            transform: rotateX(110);
+    -webkit-box-shadow: 0px 0px 54px 12px rgba(126,208,233,1);
+            box-shadow: 0px 0px 54px 12px rgba(126,208,233,1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 
 
@@ -285,6 +354,8 @@ ul > li a::after {
     color: rgba(48, 189, 231, 0.4);
     line-height: 1.7rem;
     text-shadow: 0px 0px 163px 12px rgb(0, 195, 255);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 
     
@@ -298,7 +369,8 @@ ul > li a::after {
     height: 80%;
     background-color: rgba(30, 11, 65, 0.4);
     border-radius: 2%;
-    box-shadow: 18px 35px 70px 12px rgba(43, 25, 78, 0.5);
+    -webkit-box-shadow: 18px 35px 70px 12px rgba(43, 25, 78, 0.5);
+            box-shadow: 18px 35px 70px 12px rgba(43, 25, 78, 0.5);
 
 
 }
@@ -308,7 +380,10 @@ ul > li a::after {
     height: 80%;
     background-color: rgba(22, 14, 46, 0.77);
     border-radius: 2%;
-    box-shadow: 18px 45px 70px 12px rgba(73, 53, 107, 0.7);;
+    -webkit-box-shadow: 18px 45px 70px 12px rgba(48, 35, 71, 0.7);
+            box-shadow: 18px 45px 70px 12px rgba(48, 35, 71, 0.7);;
+    -webkit-transition: 0.5s;;
+    -o-transition: 0.5s;;
     transition: 0.5s;
 
 
@@ -333,10 +408,14 @@ ul > li a::after {
     width: auto;
     margin-right: 25%;
     margin-top: 10%;
-    animation-duration: 2s;
-    animation-name: linked;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: linked;
+            animation-name: linked;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
 
 
 }
@@ -364,7 +443,10 @@ ul > li a::after {
     margin-left: 22%;
     margin-top: 9%;
     translate: rotateX(110);
-    box-shadow: 0px 0px 54px 12px rgba(126,208,233,1);
+    -webkit-box-shadow: 0px 0px 54px 12px rgba(126,208,233,1);
+            box-shadow: 0px 0px 54px 12px rgba(126,208,233,1);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 
 
@@ -397,11 +479,16 @@ ul > li a::after {
     font-family: 'neonregular', sans-serif;
     line-height: 1.7rem;
     text-shadow: 0px 0px 163px 12px rgb(3, 241, 241);
-    animation-name: bio;
-    animation-fill-mode: infinite;
-    animation-delay: 250ms;
-    animation-duration: 100ms;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: bio;
+            animation-name: bio;
+    -webkit-animation-fill-mode: infinite;
+            animation-fill-mode: infinite;
+    -webkit-animation-delay: 250ms;
+            animation-delay: 250ms;
+    -webkit-animation-duration: 100ms;
+            animation-duration: 100ms;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 
 #c5bar {
@@ -414,10 +501,14 @@ ul > li a::after {
     height: 8px;
     position: absolute;
     top: 207.7vh;
-    animation-name: c5lightshow;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 4;
+    -webkit-animation-name: c5lightshow;
+            animation-name: c5lightshow;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 4;
+            animation-iteration-count: 4;
 
 
 }
@@ -431,16 +522,20 @@ ul > li a::after {
     height: 8px;
     position: absolute;
     top: 272.7vh;
-    animation-name: c5lightshow;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 4;
+    -webkit-animation-name: c5lightshow;
+            animation-name: c5lightshow;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 4;
+            animation-iteration-count: 4;
 
 
 }
 
 
-@-moz-keyframes c5lightshow {
+@-webkit-keyframes c5lightshow {
     from {
         background-color: rgba(126,208,233,0.3);
         color: rgba(126,208,233,0.3);
@@ -468,7 +563,7 @@ ul > li a::after {
     
 }
 
-@-moz-keyframes linked {
+@-webkit-keyframes linked {
     from {
         color: rgba(126,208,233,0.3);
     }
@@ -491,7 +586,7 @@ ul > li a::after {
     
 }
 
-@-moz-keyframes bio {
+@-webkit-keyframes bio {
     from {
         color: rgba(126,208,233,0.3);
     }
@@ -516,9 +611,27 @@ ul > li a::after {
 
 @media only screen and ( max-width: 414px) {
     .header {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: .4fr 0.1fr 11fr;
         grid-template-columns: .4fr 0.1fr 11fr;
+        -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
+
+    }
+    .header > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+
+    }
+    .header > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+
+    }
+    .header > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
 
     }
     .navigation:hover{
@@ -603,10 +716,14 @@ ul > li a::after {
     width: auto;
     margin-right: 30%;
     margin-top: 5%;
-    animation-duration: 2s;
-    animation-name: linked;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: linked;
+            animation-name: linked;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
 
 
 }
@@ -620,10 +737,14 @@ ul > li a::after {
         height: 8px;
         position: absolute;
         top: 272.7vh;
-        animation-name: c5lightshow;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 4;
+        -webkit-animation-name: c5lightshow;
+                animation-name: c5lightshow;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: 4;
+                animation-iteration-count: 4;
     }
 #c5bar {
     z-index: 3;
@@ -635,17 +756,39 @@ ul > li a::after {
     height: 8px;
     position: absolute;
     top: 207.7vh;
-    animation-name: c5lightshow;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 4;
+    -webkit-animation-name: c5lightshow;
+            animation-name: c5lightshow;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 4;
+            animation-iteration-count: 4;
     }
 }
 @media only screen and ( max-width: 375px) {
     .header {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: .4fr 0.1fr 11fr;
         grid-template-columns: .4fr 0.1fr 11fr;
+        -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
+
+    }
+    .header > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+
+    }
+    .header > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+
+    }
+    .header > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
 
     }
     .navigation:hover{
@@ -697,10 +840,14 @@ ul > li a::after {
             height: 8px;
             position: absolute;
             top: 281.7vh;
-            animation-name: c5lightshow;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: 4;
+            -webkit-animation-name: c5lightshow;
+                    animation-name: c5lightshow;
+            -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 4;
+                    animation-iteration-count: 4;
         }
     #c5bar {
         z-index: 3;
@@ -712,10 +859,14 @@ ul > li a::after {
         height: 8px;
         position: absolute;
         top: 204.7vh;
-        animation-name: c5lightshow;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 4;
+        -webkit-animation-name: c5lightshow;
+                animation-name: c5lightshow;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: 4;
+                animation-iteration-count: 4;
         }
         .contentc > #v5cont {
             margin-left: 10%;
@@ -746,9 +897,27 @@ ul > li a::after {
 
 @media only screen and ( max-width: 375px) {
     .header {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: .4fr 0.1fr 11fr;
         grid-template-columns: .4fr 0.1fr 11fr;
+        -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
+
+    }
+    .header > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+
+    }
+    .header > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+
+    }
+    .header > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
 
     }
     .navigation:hover{
@@ -800,10 +969,14 @@ ul > li a::after {
             height: 8px;
             position: absolute;
             top: 277.7vh;
-            animation-name: c5lightshow;
-            animation-duration: 1s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: 4;
+            -webkit-animation-name: c5lightshow;
+                    animation-name: c5lightshow;
+            -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 4;
+                    animation-iteration-count: 4;
         }
     #c5bar {
         z-index: 3;
@@ -815,10 +988,14 @@ ul > li a::after {
         height: 8px;
         position: absolute;
         top: 208.9vh;
-        animation-name: c5lightshow;
-        animation-duration: 1s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 4;
+        -webkit-animation-name: c5lightshow;
+                animation-name: c5lightshow;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: 4;
+                animation-iteration-count: 4;
         }
         .contentc > #v5cont {
             margin-left: 10%;
@@ -863,11 +1040,174 @@ ul > li a::after {
             width: auto;
             margin-right: 27%;
             margin-top: 5%;
-            animation-duration: 2s;
-            animation-name: linked;
-            animation-fill-mode: forwards;
-            animation-iteration-count: 1;
+            -webkit-animation-duration: 2s;
+                    animation-duration: 2s;
+            -webkit-animation-name: linked;
+                    animation-name: linked;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 1;
+                    animation-iteration-count: 1;
         
         
+        }
+}
+/* RESPONSIVE SAMSUNG GALAXY 320 RESPONSIVE SAMSUNG GALAXY 320  RESPONSIVE SAMSUNG GALAXY 320  RESPONSIVE SAMSUNG GALAXY 320  RESPONSIVE SAMSUNG GALAXY 320  RESPONSIVE SAMSUNG GALAXY 320  */
+
+@media only screen and ( max-width: 320px) {
+    .header {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: .4fr 0.1fr 11fr;
+        grid-template-columns: .4fr 0.1fr 11fr;
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+
+    }
+    .header > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+
+    }
+    .header > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 2;
+
+    }
+    .header > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+
+    }
+    .navigation:hover{
+        padding-left: 0%;
+    }
+    .navigation{
+        padding-left: 0%;
+    }
+    .navigation ul li a {
+        font-size: 15px;
+        font-weight: bolder;
+    
+    }
+    .header > .logo>img{
+        height: 75%;
+        width: 55px;
+    }
+
+    .contentc {
+        margin-top: 10%;
+        width: 90%;
+        height: 86%;
+    }
+    .contentc:hover {
+        width: 90%;
+        height: 86%;
+    }
+    .contentc > .picofme {
+        height: 20%;
+        width: 40%;
+        margin-top: 34%;
+        margin-right: 29%;
+    }
+    .contentc > .picofme:hover {
+        height: 20%;
+        width: 40%;
+        margin-top: 34%;
+        margin-right: 29%;
+
+
+        }
+
+        #c5barii {
+            z-index: 3;
+            margin: 5rem 0rem 0 1.6rem;
+            padding: 0 -20% 0 0;
+            border: 1px solid rgba(0, 195, 255, 0.011);
+            border-radius: 7px;
+            width: 80%;
+            height: 8px;
+            position: absolute;
+            top: 277.7vh;
+            -webkit-animation-name: c5lightshow;
+                    animation-name: c5lightshow;
+            -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 4;
+                    animation-iteration-count: 4;
+        }
+    #c5bar {
+        z-index: 3;
+        margin: 5rem 5rem;
+        padding: 0;
+        border: 1px solid rgba(0, 195, 255, 0.011);
+        border-radius: 7px;
+        width: 80%;
+        height: 8px;
+        position: absolute;
+        top: 208.9vh;
+        -webkit-animation-name: c5lightshow;
+                animation-name: c5lightshow;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: forwards;
+                animation-fill-mode: forwards;
+        -webkit-animation-iteration-count: 4;
+                animation-iteration-count: 4;
+        }
+        .contentc > #v5cont {
+            margin-left: 10%;
+            margin-top: 31%;
+            padding: 1% 7% 1.5% 1.5%;
+            font-size: 93%;
+            line-height: 0.9rem;
+            border-radius: 4%;
+            font-family: 'neonregular', sans-serif;
+            color: rgba(110, 203, 231, 0.099);
+        
+        
+        }
+        .contentc > #v5cont:hover {
+            margin-left: 10%;
+            margin-top: 31%;
+            padding: 1% 7% 1.5% 1.5%;
+            font-size: 94%;
+            line-height: 0.9rem;
+            border-radius: 4%;
+            font-family: 'neonregular', sans-serif;
+            color: rgba(110, 203, 231, 0.099);
+        
+        
+        }
+        .contentc > a {
+            color: rgba(110, 203, 231, 0.099);
+            font-size: 45px;
+            font-weight: 200px;
+            font-family: 'neonregular', sans-serif;
+            float: right;
+            margin-right: 27%;
+            width: auto;
+            margin-top: 5%;
+        }
+        .contentc > a:hover {
+            color: rgba(0, 195, 255, 0.99);
+            font-size: 45px;
+            font-weight: 200px;
+            font-family: 'neonregular', sans-serif;
+            float: right;
+            width: auto;
+            margin-right: 27%;
+            margin-top: 5%;
+            -webkit-animation-duration: 2s;
+                    animation-duration: 2s;
+            -webkit-animation-name: linked;
+                    animation-name: linked;
+            -webkit-animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;
+            -webkit-animation-iteration-count: 1;
+                    animation-iteration-count: 1;
+    
         }
 }
