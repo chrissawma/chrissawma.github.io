@@ -286,6 +286,7 @@ body {
     grid-column:1/2;
     background-attachment: scroll;
     max-width: none;
+    max-height: none;
 
 
 
