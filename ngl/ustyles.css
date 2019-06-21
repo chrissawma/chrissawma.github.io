@@ -288,9 +288,8 @@ body {
     max-width: none;
     max-height: none;
 
+}
 
-
-                    }
 .logo > img:hover {
     margin-top: 0.25rem;
     margin-left: 0.25rem;
@@ -782,6 +781,8 @@ ul > li a::after {
     .header > .logo>img{
         height: 70%;
         width: 45px;
+       max-width: none;
+       max-height: none;
     }
 
     #vid1a > .spinner {
@@ -1093,6 +1094,8 @@ ul > li a::after {
     .header > .logo>img{
         height: 75%;
         width: 55px;
+        max-width: none;
+        max-height: none;
     }
 
 
@@ -1304,6 +1307,8 @@ ul > li a::after {
     .header > .logo>img{
         height: 75%;
         width: 55px;
+        max-width: none;
+        max-height: none;
     }
     #vid1a > .spinner {
         animation-name: spin;
