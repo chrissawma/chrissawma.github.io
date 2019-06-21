@@ -116,7 +116,7 @@ body {
     10%, 30%, 50% {
         transform: rotate(-35deg);
     }
-    70% 90%{
+    70% {
         transform: rotate(-70deg);
     }
     80%{
@@ -315,7 +315,7 @@ li {
 }
         li a {
             font-family: 'Oswald', sans-serif;
-            color: rgba(238, 157, 6, 0.6);
+            color: rgba(112, 122, 21, 0.85);
             text-decoration: none;
         }
 
@@ -781,6 +781,30 @@ ul > li a::after {
         width: 45px;
     }
 
+    #vid1a > .spinner {
+        animation-name: spin;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.72 0.165, 1);
+        height: 75px;
+        width: 75px;
+        margin: 20% auto auto 43%;
+    }
+
+    #vid1a > .chris > h1 {
+        font-size: 3.4em;
+        color: white;
+        padding: 50% auto 0% auto;
+        height: fit-content;
+        width: fit-content;
+        margin: 40% 57% -10% 8.5%;
+    }
+
+    #vid1a > .sawma > h1 {
+        font-size: 3.4em;
+        color: white;
+        margin-left: 40%;
+        margin-top: -20%;
+    }
+
 .contentc {
     margin-top: 10%;
     width: 90%;
@@ -801,7 +825,6 @@ ul > li a::after {
     width: 40%;
     margin-top: 24%;
     margin-right: 29%;
-
 
 }
 
@@ -861,8 +884,9 @@ ul > li a::after {
 }
     #c5barii {
         z-index: 3;
-        margin: 5rem 0rem 0 1.6rem;
-        padding: 0 20% 00;
+        margin: 5rem 5rem 0 0rem;
+        padding: 0;
+        margin-left: 10%;
         border: 1px solid rgba(0, 195, 255, 0.011);
         border-radius: 7px;
         width: 80%;
@@ -880,8 +904,9 @@ ul > li a::after {
     }
 #c5bar {
     z-index: 3;
-    margin: 5rem 5rem;
+    margin: 5rem 5rem 0 0;
     padding: 0;
+    margin-left: 10%;
     border: 1px solid rgba(0, 195, 255, 0.011);
     border-radius: 7px;
     width: 80%;
@@ -1031,8 +1056,8 @@ ul > li a::after {
     .header {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: .4fr 0.1fr 11fr;
-        grid-template-columns: .4fr 0.1fr 11fr;
+        -ms-grid-columns: .4fr 0.6fr 11fr;
+        grid-template-columns: .4fr 0.6fr 11fr;
         -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
 
@@ -1067,6 +1092,57 @@ ul > li a::after {
         width: 55px;
     }
 
+
+    #vid1a > .spinner {
+        animation-name: spin;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.72 0.165, 1);
+        animation-duration: 104s;
+        animation-iteration-count: infinite;
+        height: 75px;
+        width: 75px;
+        margin: 20% auto auto 43%;
+        border: 1px solid transparent;
+        border-radius: 65px;
+        box-shadow: 0px 2px 15px 15px rgba(141, 130, 68, 0.69);
+    }
+    #vid1a > .chris > h1 {
+        font-size: 3.4em;
+        color: white;
+        padding: 50% auto 0% auto;
+        height: fit-content;
+        width: fit-content;
+        margin: 40% 57% -10% 8.5%;
+        font-family: 'Baloo Tammudu', cursive;
+        background: linear-gradient(45deg, rgba(77,58,150,1) 0%,rgba(115,21,132,1) 18%,rgba(115,21,132,1) 18%,rgba(32,124,202,1) 18%,rgba(178,28,91,1) 18%,rgba(198,37,67,1) 36%,rgb(1, 121, 115) 37%,rgb(3, 112, 116) 52%,rgba(41,137,216,1) 53%,rgba(97,124,181,1) 69%,rgba(142,115,77,1) 70%,rgba(125,185,232,1) 70%,rgba(142,115,77,1) 70%,rgba(237,159,42,1) 83%,rgba(142,115,77,1) 83%);    background: -webkit-linear-gradient(to right top, #3807eb, #c500ac, #eb0076, #ee5157, #e18858, #d09b5c, #bfab6c, #b2b784, #9ab482, #7fb085, #62ac8c, #41a695);
+        background: -webkit-linear-gradient(45deg, rgba(77,58,150,1) 0%,rgba(115,21,132,1) 18%,rgba(115,21,132,1) 18%,rgba(32,124,202,1) 18%,rgba(178,28,91,1) 18%,rgba(198,37,67,1) 36%,rgba(25,132,87,1) 37%,rgba(24,127,118,1) 52%,rgba(41,137,216,1) 53%,rgba(97,124,181,1) 69%,rgba(142,115,77,1) 70%,rgba(125,185,232,1) 70%,rgba(142,115,77,1) 70%,rgba(237,159,42,1) 83%,rgba(142,115,77,1) 83%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        text-shadow: -7px 10px 2px rgba(0, 0, 0, 0.2);
+        
+    }
+    #vid1a > .sawma > h1 {
+        font-size: 3.4em;
+        color: white;
+        margin-left: 40%;
+        margin-top: -20%;
+        font-family: 'Baloo Tammudu', cursive;
+        background: linear-gradient(45deg, rgba(77,58,150,1) 0%,rgba(115,21,132,1) 18%,rgba(115,21,132,1) 18%,rgba(32,124,202,1) 18%,rgba(178,28,91,1) 18%,rgba(198,37,67,1) 36%,rgb(1, 121, 115) 37%,rgb(3, 112, 116) 52%,rgba(41,137,216,1) 53%,rgba(97,124,181,1) 69%,rgba(142,115,77,1) 70%,rgba(125,185,232,1) 70%,rgba(142,115,77,1) 70%,rgba(237,159,42,1) 83%,rgba(142,115,77,1) 83%);
+        background: -webkit-linear-gradient(45deg, rgba(77,58,150,1) 0%,rgba(115,21,132,1) 18%,rgba(115,21,132,1) 18%,rgba(32,124,202,1) 18%,rgba(178,28,91,1) 18%,rgba(198,37,67,1) 36%,rgba(25,132,87,1) 37%,rgba(24,127,118,1) 52%,rgba(41,137,216,1) 53%,rgba(97,124,181,1) 69%,rgba(142,115,77,1) 70%,rgba(125,185,232,1) 70%,rgba(142,115,77,1) 70%,rgba(237,159,42,1) 83%,rgba(142,115,77,1) 83%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        animation-name: drop 2.7s;
+        -webkit-animation: drop 2.7s;
+        animation-timing-function: cubic-bezier(.68,.5,.68,.61);
+        transform-origin: 50% 1%;
+        animation-iteration-count: 5;
+        animation-delay: 2s;
+        text-shadow: -17px 16px 2px rgba(0, 0, 0, 0.25);
+    }
+    
     .contentc {
         margin-top: 10%;
         width: 90%;
@@ -1112,7 +1188,7 @@ ul > li a::after {
         }
     #c5bar {
         z-index: 3;
-        margin: 5rem 5rem;
+        margin: 5rem 2rem 0 1.6rem;
         padding: 0;
         border: 1px solid rgba(0, 195, 255, 0.011);
         border-radius: 7px;
@@ -1226,7 +1302,29 @@ ul > li a::after {
         height: 75%;
         width: 55px;
     }
+    #vid1a > .spinner {
+        animation-name: spin;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.72 0.165, 1);
+        height: 75px;
+        width: 75px;
+        margin: 20% auto auto 43%;
+    }
 
+    #vid1a > .chris > h1 {
+        font-size: 3em;
+        color: white;
+        padding: 50% auto 0% auto;
+        height: fit-content;
+        width: fit-content;
+        margin: 40% 57% -10% 8.5%;
+    }
+
+    #vid1a > .sawma > h1 {
+        font-size: 3em;
+        color: white;
+        margin-left: 40%;
+        margin-top: -20%;
+    }
     .contentc {
         margin-top: 10%;
         width: 90%;
