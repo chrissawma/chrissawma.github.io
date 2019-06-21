@@ -285,6 +285,8 @@ body {
     -ms-grid-column-span:1;
     grid-column:1/2;
     background-attachment: scroll;
+    max-width: none;
+
 
 
                     }
