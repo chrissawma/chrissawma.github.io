@@ -11,13 +11,142 @@ body {
     padding: 0;
     height: 100vh;
     width: 100%;
+    position: center;
+    display: grid;
+    background-image: repeating-linear-gradient(145deg,
+    rgba(128,156,242, 0.6) 0px, rgba(128,156,242, 0.7) 50px,
+    rgba(247,193,187, 0.6) 50px, rgba(247,193,187, 0.7) 150px,
+    rgba(237,127,64, 0.6) 150px, rgba(237,127,64, 0.7) 200px,
+    rgba(175,27,63,0.6) 170px, rgba(175,27,63,0.7) 250px,
+    rgba(107,63,68,0.6) 250px, rgba(107,63,68,0.7) 300px);
+
     -o-object-fit: cover;
        object-fit: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     top: 0;
-    z-index:-1;
+    z-index: -1;
+}
+#vid1a {
+    width: 100%;
+    height: 100%;
+}
+
+#vid1a > .spinner {
+    animation-name: spin;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.72 0.165, 1);
+    animation-duration: 104s;
+    animation-iteration-count: infinite;
+    height: 75px;
+    width: 75px;
+    margin: 10% auto auto 47%;
+    border: 1px solid transparent;
+    border-radius: 65px;
+    box-shadow: 0px 2px 15px 15px rgba(141, 130, 68, 0.69);
+}
+ 
+@keyframes spin {
+    from {
+        transform: rotate(-72000deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes spin {
+    from {
+        transform: rotate(-72000deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+
+#vid1a > .chris > h1 {
+    font-size: 7em;
+    color: white;
+    padding: 0;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 35%;
+    margin-right: 45%;
+    font-family: 'Baloo Tammudu', cursive;
+    background: linear-gradient(45deg, rgba(77,58,150,1) 0%,rgba(115,21,132,1) 18%,rgba(115,21,132,1) 18%,rgba(32,124,202,1) 18%,rgba(178,28,91,1) 18%,rgba(198,37,67,1) 36%,rgb(1, 121, 115) 37%,rgb(3, 112, 116) 52%,rgba(41,137,216,1) 53%,rgba(97,124,181,1) 69%,rgba(142,115,77,1) 70%,rgba(125,185,232,1) 70%,rgba(142,115,77,1) 70%,rgba(237,159,42,1) 83%,rgba(142,115,77,1) 83%);    background: -webkit-linear-gradient(to right top, #3807eb, #c500ac, #eb0076, #ee5157, #e18858, #d09b5c, #bfab6c, #b2b784, #9ab482, #7fb085, #62ac8c, #41a695);
+    background: -webkit-linear-gradient(45deg, rgba(77,58,150,1) 0%,rgba(115,21,132,1) 18%,rgba(115,21,132,1) 18%,rgba(32,124,202,1) 18%,rgba(178,28,91,1) 18%,rgba(198,37,67,1) 36%,rgba(25,132,87,1) 37%,rgba(24,127,118,1) 52%,rgba(41,137,216,1) 53%,rgba(97,124,181,1) 69%,rgba(142,115,77,1) 70%,rgba(125,185,232,1) 70%,rgba(142,115,77,1) 70%,rgba(237,159,42,1) 83%,rgba(142,115,77,1) 83%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    text-shadow: -7px 10px 2px rgba(0, 0, 0, 0.2);
+    
+}
+#vid1a > .sawma > h1 {
+    font-size: 7em;
+    color: white;
+    margin-left: 48%;
+    margin-top: -13%;
+    font-family: 'Baloo Tammudu', cursive;
+    background: linear-gradient(45deg, rgba(77,58,150,1) 0%,rgba(115,21,132,1) 18%,rgba(115,21,132,1) 18%,rgba(32,124,202,1) 18%,rgba(178,28,91,1) 18%,rgba(198,37,67,1) 36%,rgb(1, 121, 115) 37%,rgb(3, 112, 116) 52%,rgba(41,137,216,1) 53%,rgba(97,124,181,1) 69%,rgba(142,115,77,1) 70%,rgba(125,185,232,1) 70%,rgba(142,115,77,1) 70%,rgba(237,159,42,1) 83%,rgba(142,115,77,1) 83%);
+    background: -webkit-linear-gradient(45deg, rgba(77,58,150,1) 0%,rgba(115,21,132,1) 18%,rgba(115,21,132,1) 18%,rgba(32,124,202,1) 18%,rgba(178,28,91,1) 18%,rgba(198,37,67,1) 36%,rgba(25,132,87,1) 37%,rgba(24,127,118,1) 52%,rgba(41,137,216,1) 53%,rgba(97,124,181,1) 69%,rgba(142,115,77,1) 70%,rgba(125,185,232,1) 70%,rgba(142,115,77,1) 70%,rgba(237,159,42,1) 83%,rgba(142,115,77,1) 83%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    animation-name: drop 2.7s;
+    -webkit-animation: drop 2.7s;
+    animation-timing-function: cubic-bezier(.68,.5,.68,.61);
+    transform-origin: 50% 1%;
+    animation-iteration-count: 5;
+    animation-delay: 2s;
+    text-shadow: -17px 16px 2px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes drop {
+    from {
+        transform: rotate(0);
+    }
+
+    20%, 40%, 60% {
+        transform: rotate(-75deg);
+    }
+    10%, 30%, 50% {
+        transform: rotate(-35deg);
+    }
+    70% 90%{
+        transform: rotate(-70deg);
+    }
+    80%{
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(0deg);
+
+    }
+}
+@-webkit-keyframes drop {
+    from {
+        transform: rotate(0);
+    }
+    20%, 40%, 60% {
+        transform: rotate(-75deg);
+    }
+    10%, 30%, 50% {
+        transform: rotate(-35deg);
+    }
+    70% 90%{
+        transform: rotate(-70deg);
+    }
+    80% {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(0deg);
+
+    }
 }
 #vid2 {
     margin: 0;
@@ -155,12 +284,15 @@ body {
     -ms-grid-column:1;
     -ms-grid-column-span:1;
     grid-column:1/2;
+    background-attachment: scroll;
+
 
                     }
 .logo > img:hover {
     margin-top: 0.25rem;
     margin-left: 0.25rem;
     background-color: rgba(0, 248, 248, 0.938);
+    background-attachment: scroll;
     -webkit-transition: ease-in-out 0.5s;
     -o-transition: ease-in-out 0.5s;
     transition: ease-in-out 0.5s;
