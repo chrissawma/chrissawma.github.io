@@ -43,7 +43,6 @@ body {
     margin: 10% auto auto 47%;
     border: 1px solid transparent;
     border-radius: 65px;
-    box-shadow: 0px 2px 15px 15px rgba(141, 130, 68, 0.69);
 }
  
 @keyframes spin {
@@ -286,10 +285,10 @@ body {
     grid-column:1/2;
     background-attachment: scroll;
     max-width: none;
-    max-height: none;
 
-}
 
+
+                    }
 .logo > img:hover {
     margin-top: 0.25rem;
     margin-left: 0.25rem;
@@ -562,7 +561,7 @@ ul > li a::after {
     width: 200px;
     z-index: 22;
     float: left;
-    margin-left: 22%;
+    margin-left: 24%;
     margin-top: 9%;
 }
 
@@ -574,7 +573,7 @@ ul > li a::after {
     width: 200px;
     z-index: 22;
     float: left;
-    margin-left: 22%;
+    margin-left: 24%;
     margin-top: 9%;
     translate: rotateX(110);
     -webkit-box-shadow: 0px 0px 54px 12px rgba(126,208,233,1);
@@ -596,40 +595,30 @@ ul > li a::after {
     }    
 
 .contentc > #v5cont {
-    margin-left: 20%;
-    margin-top: 11%;
+    margin-left: 22%;
+    margin-top: 9%;
     padding: 1.5% 1.5% 1.5% 1.5%;
     line-height: 1.7rem;
     border-radius: 4%;
     font-family: 'neonregular', sans-serif;
     color: rgba(110, 203, 231, 0.099);
+    animation-name: bio;
+    animation-duration: infinite;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+
 
 
 }
-.contentc > #v5cont:hover {
-    margin-left: 20%;
-    margin-top: 11%;
-    padding: 1.5% 1.5% 1.5% 1.5%;
-    font-family: 'neonregular', sans-serif;
-    line-height: 1.7rem;
-    text-shadow: 0px 0px 163px 12px rgb(3, 241, 241);
-    -webkit-animation-name: bio;
-            animation-name: bio;
-    -webkit-animation-fill-mode: infinite;
-            animation-fill-mode: infinite;
-    -webkit-animation-delay: 250ms;
-            animation-delay: 250ms;
-    -webkit-animation-duration: 100ms;
-            animation-duration: 100ms;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-}
+
 
 #c5bar {
     z-index: 3;
     margin: 5rem 5rem;
+    left: 20%;
     padding: 0;
     border: 1px solid rgba(0, 195, 255, 0.011);
+    box-shadow: inset 0.5px 1.5px 1px 1.2px rgba(0, 0, 0, 0.7);
     border-radius: 7px;
     width: 54%;
     height: 8px;
@@ -643,14 +632,17 @@ ul > li a::after {
             animation-fill-mode: forwards;
     -webkit-animation-iteration-count: 4;
             animation-iteration-count: 4;
+    display: none;
 
 
 }
 #c5barii {
     z-index: 3;
-    margin: 5rem 2rem 0 25rem;
+    margin: 5rem 5rem;
+    left: 20%;
     padding: 0;
     border: 1px solid rgba(0, 195, 255, 0.011);
+    box-shadow: inset 0.5px 1.5px 1px 1.2px rgba(0, 0, 0, 0.7);
     border-radius: 7px;
     width: 54%;
     height: 8px;
@@ -781,16 +773,18 @@ ul > li a::after {
     .header > .logo>img{
         height: 70%;
         width: 45px;
-       max-width: none;
-       max-height: none;
     }
 
     #vid1a > .spinner {
-        animation-name: spin;
+        animation-name: ;
         animation-timing-function: cubic-bezier(0.075, 0.82, 0.72 0.165, 1);
-        height: 75px;
-        width: 75px;
-        margin: 20% auto auto 43%;
+        height: 73px;
+        width: 73px;
+        max-width: 73px;
+        margin: 0;
+        position: relative;
+        margin-top: 15%;
+        left: 34%;
     }
 
     #vid1a > .chris > h1 {
@@ -841,21 +835,14 @@ ul > li a::after {
     border-radius: 4%;
     font-family: 'neonregular', sans-serif;
     color: rgba(110, 203, 231, 0.099);
+    animation-name: bio;
+    animation-duration: infinite;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 
 
 }
-.contentc > #v5cont:hover {
-    margin-left: 15%;
-    margin-top: 31%;
-    padding: 1% 7% 1.5% 1.5%;
-    font-size: 74%;
-    line-height: 0.9rem;
-    border-radius: 4%;
-    font-family: 'neonregular', sans-serif;
-    color: rgba(110, 203, 231, 0.099);
 
-
-}
 .contentc > a {
     color: rgba(110, 203, 231, 0.099);
     font-size: 45px;
@@ -890,13 +877,13 @@ ul > li a::after {
         z-index: 3;
         margin: 5rem 5rem 0 0rem;
         padding: 0;
-        margin-left: 10%;
+        margin: 0 15% 0 0;
         border: 1px solid rgba(0, 195, 255, 0.011);
         border-radius: 7px;
-        width: 80%;
+        width: 70%;
         height: 8px;
         position: absolute;
-        top: 272.7vh;
+        top: 280.7vh;
         -webkit-animation-name: c5lightshow;
                 animation-name: c5lightshow;
         -webkit-animation-duration: 1s;
@@ -908,15 +895,15 @@ ul > li a::after {
     }
 #c5bar {
     z-index: 3;
-    margin: 5rem 5rem 0 0;
+    margin: 0 14% 0 0;
     padding: 0;
-    margin-left: 10%;
+    right: 15%;
     border: 1px solid rgba(0, 195, 255, 0.011);
     border-radius: 7px;
-    width: 80%;
+    width: 70%;
     height: 8px;
     position: absolute;
-    top: 207.7vh;
+    top: 217.7vh;
     -webkit-animation-name: c5lightshow;
             animation-name: c5lightshow;
     -webkit-animation-duration: 1s;
@@ -1038,22 +1025,17 @@ ul > li a::after {
             border-radius: 4%;
             font-family: 'neonregular', sans-serif;
             color: rgba(110, 203, 231, 0.099);
+            animation-name: bio;
+            animation-duration: infinite;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+
         
         
         }
-        .contentc > #v5cont:hover {
-            margin-left: 10%;
-            margin-top: 31%;
-            padding: 1% 7% 1.5% 1.5%;
-            font-size: 74%;
-            line-height: 0.9rem;
-            border-radius: 4%;
-            font-family: 'neonregular', sans-serif;
-            color: rgba(110, 203, 231, 0.099);
-        
-        
-        }
+
 }
+
 /* RESPONSIVE SAMSUNG GALAXY 375 RESPONSIVE SAMSUNG GALAXY 375  RESPONSIVE SAMSUNG GALAXY 375  RESPONSIVE SAMSUNG GALAXY 375  RESPONSIVE SAMSUNG GALAXY 375  RESPONSIVE SAMSUNG GALAXY 375  */
 
 @media only screen and ( max-width: 375px) {
@@ -1094,8 +1076,6 @@ ul > li a::after {
     .header > .logo>img{
         height: 75%;
         width: 55px;
-        max-width: none;
-        max-height: none;
     }
 
 
@@ -1109,7 +1089,6 @@ ul > li a::after {
         margin: 20% auto auto 43%;
         border: 1px solid transparent;
         border-radius: 65px;
-        box-shadow: 0px 2px 15px 15px rgba(141, 130, 68, 0.69);
     }
     #vid1a > .chris > h1 {
         font-size: 3.4em;
@@ -1176,7 +1155,7 @@ ul > li a::after {
         #c5barii {
             z-index: 3;
             margin: 5rem 0rem 0 1.6rem;
-            padding: 0 -20% 0 0;
+            transform: translateX(20px);
             border: 1px solid rgba(0, 195, 255, 0.011);
             border-radius: 7px;
             width: 80%;
@@ -1220,21 +1199,15 @@ ul > li a::after {
             border-radius: 4%;
             font-family: 'neonregular', sans-serif;
             color: rgba(110, 203, 231, 0.099);
+            animation-name: bio;
+            animation-duration: infinite;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+
         
         
         }
-        .contentc > #v5cont:hover {
-            margin-left: 10%;
-            margin-top: 31%;
-            padding: 1% 7% 1.5% 1.5%;
-            font-size: 94%;
-            line-height: 0.9rem;
-            border-radius: 4%;
-            font-family: 'neonregular', sans-serif;
-            color: rgba(110, 203, 231, 0.099);
-        
-        
-        }
+
         .contentc > a {
             color: rgba(110, 203, 231, 0.099);
             font-size: 45px;
@@ -1307,8 +1280,6 @@ ul > li a::after {
     .header > .logo>img{
         height: 75%;
         width: 55px;
-        max-width: none;
-        max-height: none;
     }
     #vid1a > .spinner {
         animation-name: spin;
@@ -1404,21 +1375,15 @@ ul > li a::after {
             border-radius: 4%;
             font-family: 'neonregular', sans-serif;
             color: rgba(110, 203, 231, 0.099);
+            animation-name: bio;
+            animation-duration: infinite;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+
         
         
         }
-        .contentc > #v5cont:hover {
-            margin-left: 10%;
-            margin-top: 31%;
-            padding: 1% 7% 1.5% 1.5%;
-            font-size: 94%;
-            line-height: 0.9rem;
-            border-radius: 4%;
-            font-family: 'neonregular', sans-serif;
-            color: rgba(110, 203, 231, 0.099);
-        
-        
-        }
+
         .contentc > a {
             color: rgba(110, 203, 231, 0.099);
             font-size: 45px;
